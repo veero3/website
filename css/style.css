@@ -330,6 +330,9 @@ html[data-w-dynpage] [data-w-cloak] {
     color: rgba(0, 0, 0, 0) !important;
 }
 
+.image-12 {
+    visibility: visible;
+}
 
 h1,
 h2,
@@ -793,6 +796,10 @@ textarea.w-select {
         max-width: 728px;
     }
 
+    .image-12 {
+        visibility: visible;
+    }
+
     .w-hidden-main {
         display: inherit !important;
     }
@@ -933,6 +940,10 @@ textarea.w-select {
         max-width: none;
     }
 
+    .image-12 {
+        visibility: hidden;
+    }
+
     .w-hidden-main,
     .w-hidden-medium,
     .w-hidden-small {
@@ -989,6 +1000,10 @@ textarea.w-select {
 
     .w-col-tiny-11 {
         width: 91.6667%;
+    }
+
+    .image-12 {
+        visibility: hidden;
     }
 
     .w-col-tiny-12 {
@@ -2159,6 +2174,10 @@ textarea.w-select {
     }
 }
 
+.image-12 {
+    visibility: hidden;
+}
+
 body {
     color: #333;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
@@ -2966,6 +2985,10 @@ body {
         transition: color .5s;
     }
 
+    .image-12 {
+        visibility: visible;
+    }
+
     .nav-link:hover {
         color: #a8a8a8;
     }
@@ -2997,6 +3020,12 @@ body {
 
     .section-8 {
         background-color: #f1feff;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .image-12 {
+        visibility: visible;
     }
 }
 
