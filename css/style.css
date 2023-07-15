@@ -2398,11 +2398,35 @@ body {
     mix-blend-mode: normal;
     background-color: #fff;
     background-image: radial-gradient(circle at 100% 100%, #c0d4ff, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 0, #07215a, rgba(255, 255, 255, 0)), radial-gradient(circle at 100% 0, #5a7bc8, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 100%, #3e7bff 16%, rgba(255, 255, 255, 0));
+    background-size: 100%;
     justify-content: flex-start;
     align-items: flex-end;
     display: flex;
     position: relative;
+    /* animation: bgmove 5s timing-function delay iteration-count both infinite; */
 }
+
+/* @keyframes bgmove {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    75% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    } 
+}*/
 
 .column-2 {
     z-index: 1;
@@ -2460,9 +2484,10 @@ body {
 }
 
 .container-3 {
+    /* https://uploads-ssl.webflow.com/64ad71887ccddbeedaa7e2db/64ad87a337e09086ec15580e_me.jpg */
     width: 150px;
     height: 150px;
-    background-image: url("https://uploads-ssl.webflow.com/64ad71887ccddbeedaa7e2db/64ad87a337e09086ec15580e_me.jpg");
+    background-image: url("../images/me1.png");
     background-position: 50% 0;
     background-repeat: repeat;
     background-size: 150px;
