@@ -2771,6 +2771,7 @@ body {
 
 .section-5 {
     height: auto;
+    min-height: 100vh;
     background-color: #f6fff1;
     flex-wrap: wrap;
     justify-content: center;
@@ -3075,6 +3076,7 @@ body {
 
     .section-5 {
         height: auto;
+        min-height: 100vh;
         box-shadow: none;
         -webkit-text-fill-color: inherit;
         background-color: #f6fff1;
@@ -3314,6 +3316,7 @@ body {
 
     .section-5 {
         height: auto;
+        min-height: 100vh;
     }
 
     .div-block-5 {
@@ -3481,6 +3484,7 @@ body {
 
     .section-5 {
         height: auto;
+        min-height: 100vh;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -3638,6 +3642,7 @@ body {
 
     .section-5 {
         height: auto;
+        min-height: 100vh;
         margin-top: 0;
         padding-left: 10px;
         padding-right: 10px;
