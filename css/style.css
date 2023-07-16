@@ -2382,9 +2382,7 @@ body {
 .column {
     z-index: 2;
     max-height: 100vh;
-    mix-blend-mode: normal;
-    background-color: #fff;
-    background-image: radial-gradient(circle at 100% 100%, #c0d4ff, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 0, #07215a, rgba(255, 255, 255, 0)), radial-gradient(circle at 100% 0, #5a7bc8, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 100%, #3e7bff 16%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient(circle at top left, #001b55, #0000), radial-gradient(circle at bottom right, #aac5ff, #0000), radial-gradient(circle at top right, #0055ff, #0000), radial-gradient(circle at bottom left, #80a7ff, #0000);
     background-size: 100%;
     justify-content: flex-start;
     align-items: flex-end;
@@ -2392,6 +2390,7 @@ body {
     position: relative;
     /* animation: bgmove 5s timing-function delay iteration-count both infinite; */
 }
+
 
 /* @keyframes bgmove {
     0% {
@@ -2429,7 +2428,7 @@ body {
     grid-row-gap: 16px;
     opacity: 0;
     transform-origin: 50%;
-    background-color: #aac5ff;
+    background-color: #8fb2fe;
     border-radius: 20px;
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
@@ -2474,11 +2473,11 @@ body {
     /* https://uploads-ssl.webflow.com/64ad71887ccddbeedaa7e2db/64ad87a337e09086ec15580e_me.jpg */
     width: 150px;
     height: 150px;
-    background-color: #8fb2fe;
-    background-image: url("../images/me1.png");
-    background-position: 100% -80%;
+    background-color: #aac5ff;
+    background-image: url("../images/me2.png");
+    background-position: 40% 25%;
     background-repeat: no-repeat;
-    background-size: 140px;
+    background-size: 320px;
     border: 1px #000;
     border-radius: 50%;
     position: relative;
@@ -2786,7 +2785,9 @@ body {
 .section-5 {
     height: auto;
     min-height: 79vh;
-    background-color: #f6fff1;
+    background-color: #0000;
+    background-image: radial-gradient(circle at top left, #001b55, #0000), radial-gradient(circle at bottom right, #aac5ff, #0000), radial-gradient(circle at top right, #0055ff, #0000), radial-gradient(circle at bottom left, #80a7ff, #0000);
+
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
@@ -2796,11 +2797,11 @@ body {
 }
 
 .section-5.experience {
-    background-color: #f1feff;
+    /* background-color: #f1feff; */
 }
 
 .section-5.projects {
-    background-color: #fefff1;
+    /* background-color: #fefff1; */
     margin-bottom: 0;
     padding-bottom: 50px;
 }
@@ -3026,15 +3027,15 @@ body {
     }
 
     .section-5.experience {
-        background-color: #f1feff;
+        /* background-color: #f1feff; */
     }
 
     .section-6 {
-        background-color: #f6fff1;
+        /* background-color: #f6fff1; */
     }
 
     .section-8 {
-        background-color: #f1feff;
+        /* background-color: #f1feff; */
     }
 }
 
@@ -3060,8 +3061,8 @@ body {
         height: 100vh;
         max-height: 1000px;
         min-height: 700px;
-        background-color: #fff;
-        background-image: radial-gradient(circle at 100% 100%, #c0d4ff, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 100%, #407cff 10%, rgba(199, 217, 255, .29) 100%, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 0, #07215a, rgba(255, 255, 255, 0)), radial-gradient(circle at 100% 0, #5a7bc8, rgba(255, 255, 255, 0));
+        background-color: #ffffff00;
+        background-image: radial-gradient(circle at top left, #001b55, #0000), radial-gradient(circle at bottom right, #aac5ff, #0000), radial-gradient(circle at top right, #0055ff, #0000), radial-gradient(circle at bottom left, #80a7ff, #0000);
     }
 
     .container-2 {
@@ -3093,17 +3094,19 @@ body {
         min-height: 79vh;
         box-shadow: none;
         -webkit-text-fill-color: inherit;
-        background-color: #f6fff1;
-        background-image: none;
+        /* background-color: #f6fff1; */
+        background-image: radial-gradient(circle at top left, #b1caff, #0000), radial-gradient(circle at bottom right, #aac5ff, #0000), radial-gradient(circle at top right, #d3e2ff, #0000), radial-gradient(circle at bottom left, #808080, #0000);
+
+        /* background-image: none; */
         background-clip: border-box;
     }
 
     .section-5.experience {
-        background-color: #f1feff;
+        /* background-color: #f1feff; */
     }
 
     .section-5.projects {
-        background-color: #f3f1ff;
+        /* background-color: #f3f1ff; */
         padding-bottom: 20px;
     }
 
