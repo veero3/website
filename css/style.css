@@ -2273,12 +2273,16 @@ body {
 .nav-link.download {
     color: #fff;
     background-color: #000;
-    border-radius: 10px;
+    outline: #fff 1px solid;
+    /* border-radius: 10px; */
+    transition: all 0.7s;
 }
 
 .nav-link.download:hover {
     color: #000;
-    background-color: #707070;
+    background-color: #ffffff;
+    outline: #000 1px solid;
+    border-radius: 0%;
 }
 
 .nav-dropdown {
@@ -2394,7 +2398,7 @@ body {
 
 .column {
     z-index: 2;
-    height: 100vh;
+    max-height: 100vh;
     mix-blend-mode: normal;
     background-color: #fff;
     background-image: radial-gradient(circle at 100% 100%, #c0d4ff, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 0, #07215a, rgba(255, 255, 255, 0)), radial-gradient(circle at 100% 0, #5a7bc8, rgba(255, 255, 255, 0)), radial-gradient(circle at 0 100%, #3e7bff 16%, rgba(255, 255, 255, 0));
@@ -2487,10 +2491,11 @@ body {
     /* https://uploads-ssl.webflow.com/64ad71887ccddbeedaa7e2db/64ad87a337e09086ec15580e_me.jpg */
     width: 150px;
     height: 150px;
+    background-color: #8fb2fe;
     background-image: url("../images/me1.png");
-    background-position: 50% 0;
-    background-repeat: repeat;
-    background-size: 150px;
+    background-position: 100% -80%;
+    background-repeat: no-repeat;
+    background-size: 140px;
     border: 1px #000;
     border-radius: 50%;
     position: relative;
@@ -2520,6 +2525,7 @@ body {
     text-decoration: none;
     position: relative;
     top: 27px;
+    letter-spacing: 1px;
 }
 
 .heading-3 {
@@ -2796,7 +2802,7 @@ body {
 
 .section-5 {
     height: auto;
-    min-height: 100vh;
+    min-height: 79vh;
     background-color: #f6fff1;
     flex-wrap: wrap;
     justify-content: center;
@@ -3101,7 +3107,7 @@ body {
 
     .section-5 {
         height: auto;
-        min-height: 100vh;
+        min-height: 79vh;
         box-shadow: none;
         -webkit-text-fill-color: inherit;
         background-color: #f6fff1;
@@ -3341,7 +3347,7 @@ body {
 
     .section-5 {
         height: auto;
-        min-height: 100vh;
+        min-height: 79vh;
     }
 
     .div-block-5 {
@@ -3509,7 +3515,7 @@ body {
 
     .section-5 {
         height: auto;
-        min-height: 100vh;
+        min-height: 79vh;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -3667,7 +3673,7 @@ body {
 
     .section-5 {
         height: auto;
-        min-height: 100vh;
+        min-height: 79vh;
         margin-top: 0;
         padding-left: 10px;
         padding-right: 10px;
