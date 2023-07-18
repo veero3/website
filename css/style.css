@@ -2786,7 +2786,7 @@ body {
     height: auto;
     min-height: 79vh;
     background-color: #0000;
-    background-image: radial-gradient(circle at top left, #b1caff, #0000), radial-gradient(circle at bottom right, #aac5ff, #0000), radial-gradient(circle at top right, #d3e2ff, #0000), radial-gradient(circle at bottom left, #ffffff, #0000);
+    background-image: radial-gradient(circle at top left, #b1caffaa, #0000), radial-gradient(circle at bottom right, #c6d8ffaa, #0000), radial-gradient(circle at top right, #83e4ffaa, #0000), radial-gradient(circle at bottom left, #ffffffaa, #0000);
 
     flex-wrap: wrap;
     justify-content: center;
@@ -3095,7 +3095,7 @@ body {
         box-shadow: none;
         -webkit-text-fill-color: inherit;
         /* background-color: #f6fff1; */
-        background-image: radial-gradient(circle at top left, #b1caff, #0000), radial-gradient(circle at bottom right, #aac5ff, #0000), radial-gradient(circle at top right, #d3e2ff, #0000), radial-gradient(circle at bottom left, #ffffff, #0000);
+        background-image: radial-gradient(circle at top left, #b1caffaa, #0000), radial-gradient(circle at bottom right, #c6d8ffaa, #0000), radial-gradient(circle at top right, #83e4ffaa, #0000), radial-gradient(circle at bottom left, #ffffffaa, #0000);
 
         /* background-image: none; */
         background-clip: border-box;
