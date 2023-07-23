@@ -2474,10 +2474,10 @@ body {
     width: 150px;
     height: 150px;
     background-color: #aac5ff;
-    background-image: url("../images/me2.png");
+    background-image: url("../images/me2.jpg");
     background-position: 40% 25%;
     background-repeat: no-repeat;
-    background-size: 320px;
+    background-size: 110%;
     border: 1px #000;
     border-radius: 50%;
     position: relative;
