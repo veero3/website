@@ -576,6 +576,18 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .scroll-indicator,
+.back-to-top {
+  -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
+  outline: none;
+}
+      .header {
+    min-height: 92dvh;
+    padding: 6rem 1.5rem 4rem;
+  }
+  .scroll-indicator{
+    bottom: 0.5rem;
+  }
     .header h1 { font-size: 2rem; }
     .header h2 { font-size: 1.2rem; }
 
@@ -609,4 +621,15 @@ footer {
     .section {
         padding: 2rem 0;
     }
+      .intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+    .section-item {
+    padding-left: 1rem;
+  }
+
+  /* .section-item::before {
+    display: none;
+  } */
 }
