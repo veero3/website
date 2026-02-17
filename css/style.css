@@ -78,33 +78,93 @@ nav a {
 }
 
 nav a:hover {
-    color: #3498db;
+    color: #a6dbff;
 }
 
 /* Header Section */
-.header {
-    position: relative;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height:100dvh;
-    /* max-height: 100vh; */
-    display: flex;
-    color: white;
-    padding: 4rem 2rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+.header > * {
+  position: relative;
+  z-index: 1;
 }
 
+.header {
+  position: relative;
+  height: 94dvh;
+  display: flex;
+  color: white;
+  padding-block: clamp(3rem, 6vh, 5rem);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background:
+    /* moving dashed lines */
+    repeating-linear-gradient(
+      135deg,
+      rgba(255,255,255,0.08) 0px,
+      rgba(255,255,255,0.08) 1px,
+      transparent 1px,
+      transparent 20px
+    ),
+    /* static dots */
+    radial-gradient(
+      rgba(255,255,255,0.1) 1px,
+      transparent 1px
+    ),
+    /* base gradient */
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+  background-size:
+    80px 80px,
+    30px 30px,
+    cover;
+
+  /* start positions */
+  background-position:
+    0 0,
+    0 0,
+    center;
+
+  animation: driftLines 60s linear infinite;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.05);
+  pointer-events: none;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes driftLines {
+  from {
+    background-position:
+      0 0,
+      0 0,
+      0 0,
+      center;
+  }
+  to {
+    background-position:
+      -400px -400px, /* dashed lines move up */
+      100px 100px,      /* dots stay still */
+      center;
+  }
+}
 .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
+  align-items: top;
+    gap: 0.5rem;
 }
 
 .scroll-indicator {
   position: absolute;
-  bottom: 4rem;
+    bottom: clamp(1.5rem, 4vh, 3rem);
   left: 50%;
   width: 45px;
   height: 45px;
@@ -112,7 +172,6 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-
   transform: translateX(-50%);
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.7);
@@ -121,16 +180,6 @@ nav a:hover {
 
 
 
-.scroll-indicator:hover{
-  /* padding: 0.5rem 0.5rem; */
-  /* font-size: 0.85rem; */
-  color: #ffffff;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  transition: all 0.2s ease;
-}
 
 .header h1 {
     font-size: 3rem;
@@ -146,7 +195,7 @@ nav a:hover {
 
 /* Profile Photo */
 .profile-photo-container {
-    margin: 2rem 0;
+    margin: 0;
 }
 
 .profile-photo {
@@ -164,7 +213,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: clamp(2vh, 1.5rem, 4vh);
 }
 
 .social-icons a {
@@ -173,7 +222,7 @@ nav a:hover {
     justify-content: center;
     width: 50px;
     height: 50px;
-    background-color: transparent;
+    background-color: rgba(255,255,255,0.2);
     border: 2px solid rgba(255,255,255,0.6);
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -181,6 +230,7 @@ nav a:hover {
     color: white;
     font-size: 1.5rem;
     position: relative;
+    z-index: 2;
 }
 
 .social-icons a i {
@@ -211,20 +261,7 @@ nav a:hover {
     color: #0077b5;
 }
 
-.social-icons a[title="Instagram"]:hover i {
-    color: #E4405F;
-}
 
-.scroll-indicator {
-  position: absolute;
-  bottom: 4rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.2rem;
-  color: rgba(255, 255, 255, 0.7);
-  animation: bounce 2.5s infinite;
-  /* pointer-events: none; */
-}
 
 /* Main Content */
 .container {
@@ -441,7 +478,8 @@ nav a:hover {
 
 
 .skill-pills {
-  margin-top: 1rem;
+  margin: 4vh;
+  bottom: 15vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -456,7 +494,7 @@ nav a:hover {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(6px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255,255,255,0.6);
   transition: all 0.2s ease;
 }
 
@@ -494,6 +532,10 @@ footer {
   visibility: hidden;
   transition: all 0.3s ease;
   z-index: 9999;
+}
+
+.back-to-top, a{
+    color: white;
 }
 
 .back-to-top.show {
@@ -560,7 +602,7 @@ footer {
 /* Responsive */
 @media (max-width: 768px) {
     .scroll-indicator,
-.back-to-top, .btn {
+.back-to-top, .btn, *{
   -webkit-tap-highlight-color: transparent; /* Chrome, Safari */
   outline: none;
 }
